@@ -1,0 +1,68 @@
+.btn-primary {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 12px 24px;
+    transition: all 0.3s ease-out;
+    height: 60px;
+    background: linear-gradient(90deg, #47B298 12%, rgba(68, 75, 144, 0.92) 100%);
+    border-radius: 60px;
+    color: var(--white);
+    gap: 8px;
+    height: 52px;
+    @media (min-width: 992px) {
+        padding: 18px 37px;
+        height: auto;
+    }
+
+    &:hover {
+        background: linear-gradient(90deg, #3a9e85 12%, rgba(49, 56, 116, 0.92) 100%);
+        color: var(--white);
+    }
+}
+
+.btn-close {
+    width: 40px;
+    height: 40px;
+    background-color: var(--black);
+    color: var(--white);
+    font-size: 32px;
+    opacity: 1;
+    background-image: none;
+}
+
+.contact-btn {
+    height: 43px;
+    padding: 9px 26px 10px;
+    align-items: center;
+    justify-content: center;
+    /* consultiq.webflow.io/Nero 20% */
+    background: rgba(255, 255, 255, 0.2);
+    /* consultiq.webflow.io/Nero */
+    border: 1px solid var(--white);
+    border-radius: 60px;
+    color: var(--white);
+    transition: all 0.3s ease-out;
+
+    &:hover {
+        background-color: #181818;
+        color: var(--white);
+    }
+}
+
+.icon-watsap {
+    background-color: #247A37;
+    height: 44px;
+    width: 44px;
+    border-radius: 8px;
+    color: var(--white);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &:hover {
+        background-color: #2e8741;
+        color: var(--white);
+    }
+}

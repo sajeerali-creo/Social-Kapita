@@ -1,0 +1,700 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+
+    <!-- CSS frame work -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- main-stylesheet -->
+    <link rel="stylesheet" href="css/main.css">
+
+    <!-- icon font -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet" />
+
+    <!-- scroll animation -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <header class="main-header">
+        <!-- desktop -->
+        <div class="desk-header w-100 d-none d-lg-block">
+            <div class="d-flex justify-content-between align-items-center">
+                <a href="index.html" class="barnd">
+                    <img src="img/logo.svg" alt="">
+                </a>
+                <div>
+                    <ul class="main-menu">
+                        <li>
+                            <a href="index.html">Home</a>
+                        </li>
+                        <li>
+                            <a href="#about-us">About Us</a>
+                        </li>
+                        <li>
+                            <a href="#service">Serices</a>
+                        </li>
+                        <li>
+                            <a href="#partner">Partner</a>
+                        </li>
+                        <li>
+                            <a href="contact.html">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+                <a href="contact.html" class="contact-btn d-flex gap-2">
+                    Let’s talk
+                    <svg width="13" height="8" viewBox="0 0 13 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g clip-path="url(#clip0_30_3336)">
+                            <g clip-path="url(#clip1_30_3336)">
+                                <g clip-path="url(#clip2_30_3336)">
+                                    <path
+                                        d="M1.00006 3.58716H12.0001M12.0001 3.58716L7.00006 -0.912842M12.0001 3.58716L7.00006 8.5872"
+                                        stroke="white" stroke-width="1.5" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                </g>
+                            </g>
+                        </g>
+                        <defs>
+                            <clipPath id="clip0_30_3336">
+                                <rect width="13" height="8" fill="white" />
+                            </clipPath>
+                            <clipPath id="clip1_30_3336">
+                                <rect width="13" height="8" fill="white" />
+                            </clipPath>
+                            <clipPath id="clip2_30_3336">
+                                <rect width="13" height="12" fill="white" transform="translate(6.10352e-05 -2)" />
+                            </clipPath>
+                        </defs>
+                    </svg>
+                </a>
+            </div>
+        </div>
+
+        <!-- mobile -->
+        <div class="mob-header py-3 d-lg-none">
+            <div class="container-xl d-flex justify-content-between">
+                <a href="index.html" class="barnd">
+                    <img src="img/logo.svg" alt="">
+                </a>
+                <a class="menu-mob" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button"
+                    aria-controls="offcanvasExample">
+                    <i class="ri-menu-5-line"></i>
+                </a>
+            </div>
+            <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample"
+                aria-labelledby="offcanvasExampleLabel">
+
+                <div class="offcanvas-body">
+                    <ul class="main-menu">
+                        <li>
+                            <a href="index.html">Home</a>
+                        </li>
+                        <li>
+                            <a href="#about-us">About Us</a>
+                        </li>
+                        <li>
+                            <a href="#service">Serices</a>
+                        </li>
+                        <li>
+                            <a href="#partner">Partner</a>
+                        </li>
+                        <li>
+                            <a href="contact.html">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <a href="contact.html" class="contact-btn d-flex gap-2">
+                    Let’s talk
+                    <svg width="13" height="8" viewBox="0 0 13 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g clip-path="url(#clip0_30_3336)">
+                            <g clip-path="url(#clip1_30_3336)">
+                                <g clip-path="url(#clip2_30_3336)">
+                                    <path
+                                        d="M1.00006 3.58716H12.0001M12.0001 3.58716L7.00006 -0.912842M12.0001 3.58716L7.00006 8.5872"
+                                        stroke="white" stroke-width="1.5" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                </g>
+                            </g>
+                        </g>
+                        <defs>
+                            <clipPath id="clip0_30_3336">
+                                <rect width="13" height="8" fill="white" />
+                            </clipPath>
+                            <clipPath id="clip1_30_3336">
+                                <rect width="13" height="8" fill="white" />
+                            </clipPath>
+                            <clipPath id="clip2_30_3336">
+                                <rect width="13" height="12" fill="white" transform="translate(6.10352e-05 -2)" />
+                            </clipPath>
+                        </defs>
+                    </svg>
+                </a>
+
+            </div>
+        </div>
+        </div>
+    </header>
+
+    <!-- banner -->
+    <section class="main-banner">
+        <div
+            class="container-xl py-5 d-flex flex-column align-items-center justify-content-center align-items-lg-baseline">
+            <div class="strip-head mb-3" data-aos="fade-up">
+                <div><svg width="20" height="24" viewBox="0 0 20 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g clip-path="url(#clip0_30_3187)">
+                            <g clip-path="url(#clip1_30_3187)">
+                                <g clip-path="url(#clip2_30_3187)">
+                                    <path
+                                        d="M9.94066 18.8462C7.32975 18.8571 5.18239 16.7494 5.19341 14.1385C5.20438 11.5384 7.68571 9.15385 9.94066 9.47033V5M9.94066 18.8462C12.5406 18.8353 14.6375 16.7384 14.6484 14.1385H16.9033M9.94066 18.8462V21.022M16.9033 14.1385C16.1754 18.8857 12.9077 20.5736 11.3648 20.8242M16.9033 14.1385H18.8813M9.94066 21.022C5.47824 20.927 3.57143 17.2901 3.17582 15.4835M9.94066 21.022V23M9.94066 11.3692C8.46588 11.4238 7.31461 12.6637 7.36923 14.1385C7.42179 15.5576 8.52086 16.6779 9.94066 16.7099C11.3936 16.7427 12.598 15.5914 12.6308 14.1385M8.27912 7.25495C6.56484 7.63736 3.08879 9.54945 2.8989 14.1385M2.8989 14.1385H5.27253M2.8989 14.1385H1M9.94066 14.1385L13.1451 10.7758M13.1451 10.7758V8.9956L15.4791 6.54286V8.48132H17.4571L15.044 10.9736L13.1451 10.7758Z"
+                                        stroke="white" stroke-linecap="round" />
+                                </g>
+                            </g>
+                        </g>
+                        <defs>
+                            <clipPath id="clip0_30_3187">
+                                <rect width="20" height="20" fill="white" transform="translate(0 4)" />
+                            </clipPath>
+                            <clipPath id="clip1_30_3187">
+                                <rect width="20" height="20" fill="white" transform="translate(0 4)" />
+                            </clipPath>
+                            <clipPath id="clip2_30_3187">
+                                <rect width="20" height="20" fill="white" transform="translate(0 4)" />
+                            </clipPath>
+                        </defs>
+                    </svg>
+                </div>
+                <div>GROW YOUR BUSINESS WITH US</div>
+            </div>
+            <h1 class="mb-3" data-aos="fade-up">We create unique<br class="d-none d-lg-block">
+                business ideas.</h1>
+            <p class="mb-4" data-aos="fade-up">At Social Kapita, we help companies launch and expand their<br
+                    class="d-none d-lg-block">
+                brands in the Middle East and Africa.</p>
+            <a href="contact.html" class="btn-primary" data-aos="fade-up" data-aos-duration="1000">
+                Get started now
+                <svg width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g clip-path="url(#clip0_30_3206)">
+                        <g clip-path="url(#clip1_30_3206)">
+                            <g clip-path="url(#clip2_30_3206)">
+                                <path
+                                    d="M8.46838 4.92826C6.95265 5.06918 3.81712 6.2398 2.95214 9.76873C2.91106 9.93632 3.09396 10.0673 3.24699 9.98758C4.15779 9.5131 5.64863 8.96474 6.4844 9.47101M8.46838 4.92826C7.63954 6.10229 6.9509 7.59367 6.4844 9.47101M8.46838 4.92826C9.6684 3.22844 11.1623 2.19387 12.7014 1.61632M6.4844 9.47101C6.46027 9.56811 6.43673 9.66624 6.41381 9.76542M12.7014 1.61632C14.5273 0.93113 16.4168 0.889188 17.9545 1.1428C18.6865 1.26352 19.2313 1.86437 19.3263 2.60012C19.595 4.68019 19.4099 6.42321 18.9095 7.87739M12.7014 1.61632L18.9095 7.87739M6.41381 9.76542C6.22851 10.5669 6.08276 11.4364 5.98256 12.379C5.95128 12.6732 6.05825 12.9645 6.26745 13.1737L7.40347 14.3097C7.59101 14.4973 7.84535 14.6044 8.11043 14.596C8.91992 14.5703 9.83046 14.469 10.7746 14.2686M6.41381 9.76542L10.7746 14.2686M15.6117 12.2265C15.6117 13.9933 14.6151 17.4771 10.6846 17.6722C10.5302 17.6799 10.4318 17.5128 10.504 17.3761C11.0007 16.4366 11.6248 14.8536 11.087 14.1989M15.6117 12.2265C14.2247 13.2152 12.6218 13.8396 11.087 14.1989M15.6117 12.2265C17.047 11.2035 18.2512 9.79033 18.9095 7.87739M11.087 14.1989C10.9825 14.2233 10.8783 14.2466 10.7746 14.2686M5.9374 15.0423C4.61817 13.7231 1.97972 13.7231 1.53998 19C3.73869 19 7.69637 17.6808 5.9374 15.0423ZM14.2925 6.24749C13.5712 5.49187 12.5418 5.25719 11.6541 5.80774C10.6221 6.44775 10.4857 7.91449 11.2143 8.88594C11.9429 9.85739 13.3798 10.1266 14.2925 9.32568C15.196 8.53278 15.1225 7.11704 14.2925 6.24749Z"
+                                    stroke="white" stroke-linecap="round" />
+                            </g>
+                        </g>
+                    </g>
+                    <defs>
+                        <clipPath id="clip0_30_3206">
+                            <rect width="20" height="20" fill="white" transform="translate(0.539978)" />
+                        </clipPath>
+                        <clipPath id="clip1_30_3206">
+                            <rect width="20" height="20" fill="white" transform="translate(0.539978)" />
+                        </clipPath>
+                        <clipPath id="clip2_30_3206">
+                            <rect width="20" height="20" fill="white" transform="translate(0.539978)" />
+                        </clipPath>
+                    </defs>
+                </svg>
+
+            </a>
+        </div>
+    </section>
+
+    <!-- stripe -->
+    <section class="stripe-banner d-flex justify-content-lg-around align-items-center scroll-h">
+        <div class="d-flex align-items-center gap-2 w-100 text-center justify-content-center px-4 px-lg-0">
+            <div><svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M23.8334 7.31254H20.812C20.1609 7.31254 19.8352 7.31254 19.5282 7.21957C19.2212 7.12661 18.9502 6.94599 18.4083 6.58476C17.5956 6.04291 16.6684 5.42478 16.2078 5.28532C15.7472 5.14587 15.2588 5.14587 14.2819 5.14587C12.9535 5.14587 12.0973 5.14587 11.5 5.39326C10.9028 5.64065 10.4331 6.11033 9.49378 7.04968L8.66711 7.87635C8.45542 8.08805 8.34956 8.1939 8.28422 8.2984C8.04198 8.68578 8.06883 9.18351 8.35132 9.54259C8.42753 9.63947 8.54415 9.73331 8.77738 9.92101C9.63948 10.6148 10.8823 10.5456 11.663 9.76025L13 8.41522H14.0834L20.5834 14.9539C21.1817 15.5558 21.1817 16.5316 20.5834 17.1335C19.985 17.7354 19.015 17.7354 18.4167 17.1335L17.875 16.5885M17.875 16.5885L14.625 13.3193M17.875 16.5885C18.4733 17.1904 18.4733 18.1663 17.875 18.7681C17.2767 19.37 16.3067 19.37 15.7084 18.7681L14.625 17.6784M14.625 17.6784C15.2233 18.2802 15.2233 19.256 14.625 19.8579C14.0267 20.4597 13.0567 20.4597 12.4584 19.8579L10.8334 18.2232M14.625 17.6784L12.4584 15.5117M10.8334 18.2232L10.2917 17.6784M10.8334 18.2232C11.4317 18.8251 11.4317 19.801 10.8334 20.4029C10.2351 21.0047 9.265 21.0047 8.66669 20.4029L5.60775 17.2802C4.97918 16.6385 4.6649 16.3177 4.26223 16.1484C3.85957 15.9792 3.41044 15.9792 2.51221 15.9792H2.16669"
+                        stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                    <path d="M23.8333 15.9791H21.125" stroke="white" stroke-linecap="round" />
+                    <path d="M9.20835 7.3125H2.16669" stroke="white" stroke-linecap="round" />
+                </svg>
+            </div>
+            <div>Business Consultancy</div>
+        </div>
+        <div>
+            <svg width="1" height="59" viewBox="0 0 1 59" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect opacity="0.5" x="-0.00750732" width="1" height="59" fill="white" />
+            </svg>
+        </div>
+        <div class="d-flex align-items-center gap-2 w-100 text-center justify-content-center px-4 px-lg-0">
+            <div>
+                <svg width="27" height="26" viewBox="0 0 27 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M13.0181 6.04097C13.3016 6.52937 13.4433 6.77356 13.4433 7.04171C13.4433 7.30985 13.3016 7.55405 13.0181 8.04245L11.6645 10.3743C11.3811 10.8627 11.2393 11.1069 11.0058 11.2409C10.7724 11.375 10.4889 11.375 9.92188 11.375H7.21478C6.6478 11.375 6.3643 11.375 6.13083 11.2409C5.89736 11.1069 5.75561 10.8627 5.47212 10.3743L4.11857 8.04245C3.83507 7.55405 3.69333 7.30985 3.69333 7.04171C3.69333 6.77356 3.83507 6.52937 4.11857 6.04097L5.47212 3.70911C5.75561 3.22071 5.89736 2.97652 6.13083 2.84245C6.3643 2.70837 6.6478 2.70837 7.21478 2.70837H9.92188C10.4889 2.70837 10.7724 2.70837 11.0058 2.84245C11.2393 2.97652 11.3811 3.22071 11.6645 3.70911L13.0181 6.04097Z"
+                        stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                    <path
+                        d="M23.8514 12.5409C24.1349 13.0294 24.2766 13.2736 24.2766 13.5417C24.2766 13.8098 24.1349 14.054 23.8514 14.5425L22.4978 16.8743C22.2144 17.3627 22.0726 17.6069 21.8391 17.7409C21.6057 17.875 21.3222 17.875 20.7552 17.875H18.0481C17.4811 17.875 17.1976 17.875 16.9641 17.7409C16.7307 17.6069 16.5889 17.3627 16.3055 16.8743L14.9519 14.5425C14.6683 14.054 14.5266 13.8098 14.5266 13.5417C14.5266 13.2736 14.6683 13.0294 14.9519 12.5409L16.3055 10.2091C16.5889 9.72072 16.7307 9.47652 16.9641 9.34245C17.1976 9.20837 17.4811 9.20837 18.0481 9.20837H20.7552C21.3222 9.20837 21.6057 9.20837 21.8391 9.34245C22.0726 9.47652 22.2144 9.72072 22.4978 10.2091L23.8514 12.5409Z"
+                        stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                    <path
+                        d="M13.0181 17.9576C13.3016 18.446 13.4433 18.6902 13.4433 18.9583C13.4433 19.2265 13.3016 19.4706 13.0181 19.9591L11.6645 22.2909C11.3811 22.7794 11.2393 23.0235 11.0058 23.1576C10.7724 23.2917 10.4889 23.2917 9.92188 23.2917H7.21478C6.6478 23.2917 6.3643 23.2917 6.13083 23.1576C5.89736 23.0235 5.75561 22.7794 5.47212 22.2909L4.11857 19.9591C3.83507 19.4706 3.69333 19.2265 3.69333 18.9583C3.69333 18.6902 3.83507 18.446 4.11857 17.9576L5.47212 15.6258C5.75561 15.1373 5.89736 14.8931 6.13083 14.7591C6.3643 14.625 6.6478 14.625 7.21478 14.625H9.92188C10.4889 14.625 10.7724 14.625 11.0058 14.7591C11.2393 14.8931 11.3811 15.1373 11.6645 15.6258L13.0181 17.9576Z"
+                        stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+
+            </div>
+            <div>Operations</div>
+        </div>
+        <div>
+            <svg width="1" height="59" viewBox="0 0 1 59" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect opacity="0.5" x="-0.00750732" width="1" height="59" fill="white" />
+            </svg>
+        </div>
+        <div class="d-flex align-items-center gap-2 w-100 text-center justify-content-center px-4 px-lg-0">
+            <div>
+                <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M11.9661 10H11.9811M11.9698 16H11.9848" stroke="white" stroke-width="1.5"
+                        stroke-linecap="round" stroke-linejoin="round" />
+                    <path d="M7.96997 13H15.97" stroke="white" stroke-width="1.5" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                    <path
+                        d="M18.47 5C19.2984 5 19.97 5.67157 19.97 6.5C19.97 7.32843 19.2984 8 18.47 8C17.6415 8 16.97 7.32843 16.97 6.5C16.97 5.67157 17.6415 5 18.47 5Z"
+                        stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                    <path
+                        d="M3.7442 11.1439C2.74105 12.2643 2.71947 13.9546 3.64013 15.1437C5.46708 17.5033 7.46671 19.5029 9.8263 21.3298C11.0154 22.2505 12.7057 22.2289 13.8261 21.2258C16.8679 18.5022 19.6535 15.6559 22.3419 12.5279C22.6077 12.2187 22.7739 11.8397 22.8112 11.4336C22.9762 9.63798 23.3152 4.46467 21.9103 3.05974C20.5053 1.65481 15.332 1.99377 13.5364 2.15876C13.1303 2.19608 12.7513 2.36233 12.442 2.62811C9.31409 5.31646 6.46778 8.10211 3.7442 11.1439Z"
+                        stroke="white" stroke-width="1.5" />
+                </svg>
+
+            </div>
+            <div>Sales</div>
+        </div>
+        <div>
+            <svg width="1" height="59" viewBox="0 0 1 59" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect opacity="0.5" x="-0.00750732" width="1" height="59" fill="white" />
+            </svg>
+        </div>
+        <div class="d-flex align-items-center gap-2 w-100 text-center justify-content-center px-4 px-lg-0">
+            <div>
+                <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M14.455 19.5V11.5C14.455 10.5572 14.455 10.0858 14.1621 9.79289C13.8692 9.5 13.3978 9.5 12.455 9.5C11.5122 9.5 11.0408 9.5 10.7478 9.79289C10.455 10.0858 10.455 10.5572 10.455 11.5V19.5C10.455 20.4428 10.455 20.9142 10.7478 21.2071C11.0408 21.5 11.5122 21.5 12.455 21.5C13.3978 21.5 13.8692 21.5 14.1621 21.2071C14.455 20.9142 14.455 20.4428 14.455 19.5Z"
+                        stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                    <path
+                        d="M21.455 12.5V19.5C21.455 20.4428 21.455 20.9142 21.1621 21.2071C20.8692 21.5 20.3978 21.5 19.455 21.5C18.5122 21.5 18.0408 21.5 17.7479 21.2071C17.455 20.9142 17.455 20.4428 17.455 19.5V12.5"
+                        stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                    <path
+                        d="M18.3925 9.16667V3.83333M19.955 3.83333V2.5M19.955 10.5V9.16667M18.3925 6.5H21.5175M21.5175 6.5C22.0353 6.5 22.455 6.94772 22.455 7.5V8.16667C22.455 8.71895 22.0353 9.16667 21.5175 9.16667H17.455M21.5175 6.5C22.0353 6.5 22.455 6.05228 22.455 5.5V4.83333C22.455 4.28105 22.0353 3.83333 21.5175 3.83333H17.455"
+                        stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                    <path
+                        d="M7.45496 19.5V14.5C7.45496 13.5572 7.45496 13.0858 7.16207 12.7929C6.86917 12.5 6.39777 12.5 5.45496 12.5C4.51215 12.5 4.04075 12.5 3.74785 12.7929C3.45496 13.0858 3.45496 13.5572 3.45496 14.5V19.5C3.45496 20.4428 3.45496 20.9142 3.74785 21.2071C4.04075 21.5 4.51215 21.5 5.45496 21.5C6.39777 21.5 6.86917 21.5 7.16207 21.2071C7.45496 20.9142 7.45496 20.4428 7.45496 19.5Z"
+                        stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+
+            </div>
+            <div>Marketing</div>
+        </div>
+        <div>
+            <svg width="1" height="59" viewBox="0 0 1 59" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect opacity="0.5" x="-0.00750732" width="1" height="59" fill="white" />
+            </svg>
+        </div>
+        <div class="d-flex align-items-center gap-2 w-100 text-center justify-content-center px-4 px-lg-0">
+            <div>
+                <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M12.7414 6.48949L14.227 5.00392C15.8997 3.3312 18.0896 2.63737 20.4072 2.52399C21.3087 2.47989 21.7594 2.45784 22.1208 2.81928C22.4823 3.18071 22.4602 3.63143 22.4161 4.53289C22.3027 6.8505 21.6089 9.04042 19.9362 10.7131L18.4506 12.1987C17.2272 13.4221 16.8794 13.77 17.1362 15.097C17.3897 16.1107 17.635 17.0923 16.8979 17.8294C16.0038 18.7235 15.1882 18.7235 14.2941 17.8294L7.11064 10.646C6.21655 9.75188 6.21652 8.9363 7.11064 8.04219C7.84773 7.30509 8.82935 7.55044 9.84303 7.80389C11.1701 8.06073 11.518 7.71289 12.7414 6.48949Z"
+                        stroke="white" stroke-width="1.5" stroke-linejoin="round" />
+                    <path d="M17.936 7H17.945" stroke="white" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                    <path d="M3.44006 21.5L8.44006 16.5" stroke="white" stroke-width="1.5" stroke-linecap="round" />
+                    <path d="M9.44006 21.5L11.4401 19.5" stroke="white" stroke-width="1.5" stroke-linecap="round" />
+                    <path d="M3.44006 15.5L5.44006 13.5" stroke="white" stroke-width="1.5" stroke-linecap="round" />
+                </svg>
+
+            </div>
+            <div>Market entry & Expansion</div>
+        </div>
+    </section>
+
+    <section class="abt-section padding-top padding-bottom">
+        <div class="container-xl">
+            <div class="row justify-content-lg-between">
+                <div class="col-lg-6 position-relative">
+                    <div class="abt-one" data-aos="fade-up">
+                        <img src="img/abt-one.webp" alt="">
+                    </div>
+                    <div class="abt-two d-none d-lg-block" data-aos="fade-up" data-aos-duration="1000">
+                        <img src="img/abt-two.webp" alt="">
+                    </div>
+                </div>
+                <div class="col-lg-5">
+                    <div class="abt-strp mb-3">
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g clip-path="url(#clip0_30_3389)">
+                                <path
+                                    d="M11.6567 6.66663H8.32333C6.255 6.66663 5.82333 7.09829 5.82333 9.16663V18.3333H14.1567V9.16663C14.1567 7.09829 13.725 6.66663 11.6567 6.66663Z"
+                                    stroke="#47B298" stroke-width="1.5" stroke-linejoin="round" />
+                                <path d="M9.15668 10H10.8233M9.15668 12.5H10.8233M9.15668 15H10.8233" stroke="#47B298"
+                                    stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                <path
+                                    d="M17.49 18.3333V6.82133C17.49 5.79775 17.49 5.28596 17.2411 4.87468C16.9922 4.46339 16.5439 4.23452 15.6474 3.77676L12.0293 1.92943C11.0623 1.43566 10.8233 1.60968 10.8233 2.69057V6.41954"
+                                    stroke="#47B298" stroke-width="1.5" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                                <path d="M2.49001 18.3333V10.8333C2.49001 10.1439 2.6339 10 3.32334 10H5.82334"
+                                    stroke="#47B298" stroke-width="1.5" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                                <path d="M18.3233 18.3334H1.65668" stroke="#47B298" stroke-width="1.5"
+                                    stroke-linecap="round" stroke-linejoin="round" />
+                            </g>
+                            <defs>
+                                <clipPath id="clip0_30_3389">
+                                    <rect width="20" height="20" fill="white" transform="translate(-0.00999451)" />
+                                </clipPath>
+                            </defs>
+                        </svg>
+                        about us
+                    </div>
+                    <h2 class="mb-4 h2" data-aos="fade-up">Who We Are</h2>
+                    <p class="paragraph mb-4" data-aos="fade-up">
+                        We are a team of professionals based in the UAE with over two decades of experience in the
+                        Middle East & Africa. Our strength extends beyond our internal expertise, as we leverage an
+                        extensive network of relationships to amplify our impact and drive businesses forward.
+                    </p>
+                    <div class="d-flex gap-3 mt-5" data-aos="fade-up">
+                        <div class="circle-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M2.5 8.18677C2.60406 6.08705 2.91537 4.77792 3.84664 3.84664C4.77792 2.91537 6.08705 2.60406 8.18677 2.5M21.5 8.18677C21.3959 6.08705 21.0846 4.77792 20.1534 3.84664C19.2221 2.91537 17.9129 2.60406 15.8132 2.5M15.8132 21.5C17.9129 21.3959 19.2221 21.0846 20.1534 20.1534C21.0846 19.2221 21.3959 17.9129 21.5 15.8132M8.18676 21.5C6.08705 21.3959 4.77792 21.0846 3.84664 20.1534C2.91537 19.2221 2.60406 17.9129 2.5 15.8132"
+                                    stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                <path
+                                    d="M19.6352 11.3178C19.8784 11.6224 20 11.7746 20 12C20 12.2254 19.8784 12.3776 19.6352 12.6822C18.5423 14.0504 15.7514 17 12 17C8.24862 17 5.45768 14.0504 4.36483 12.6822C4.12161 12.3776 4 12.2254 4 12C4 11.7746 4.12161 11.6224 4.36483 11.3178C5.45768 9.9496 8.24862 7 12 7C15.7514 7 18.5423 9.9496 19.6352 11.3178Z"
+                                    stroke="white" stroke-width="1.5" />
+                                <path
+                                    d="M14 12C14 10.8954 13.1046 10 12 10C10.8954 10 10 10.8954 10 12C10 13.1046 10.8954 14 12 14C13.1046 14 14 13.1046 14 12Z"
+                                    stroke="white" stroke-width="1.5" />
+                            </svg>
+
+                        </div>
+                        <div>
+                            <h3 class="h3">Our Mission </h3>
+                            <p class="paragraph">Transform brands into market leaders by fostering strong partnerships
+                                with retailers and engaging effectively with consumers.</p>
+                        </div>
+                    </div>
+                    <div class="d-flex gap-3 mt-4" data-aos="fade-up" data-aos-duration="1000">
+                        <div class="circle-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M17 12C17 14.7614 14.7614 17 12 17C9.23858 17 7 14.7614 7 12C7 9.23858 9.23858 7 12 7"
+                                    stroke="white" stroke-width="1.5" stroke-linecap="round" />
+                                <path
+                                    d="M14 2.20004C13.3538 2.06886 12.6849 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22C17.5228 22 22 17.5228 22 12C22 11.3151 21.9311 10.6462 21.8 10"
+                                    stroke="white" stroke-width="1.5" stroke-linecap="round" />
+                                <path
+                                    d="M12.0303 11.9624L16.5832 7.40949M19.7404 4.34451L19.1872 2.35737C19.0853 2.03 18.6914 1.89954 18.4259 2.11651C16.9898 3.29007 15.4254 4.8708 16.703 7.36408C19.2771 8.56443 20.7466 6.94573 21.8733 5.58519C22.0975 5.31449 21.9623 4.90756 21.6247 4.80994L19.7404 4.34451Z"
+                                    stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                        </div>
+                        <div>
+                            <h3 class="h3">Our Vision </h3>
+                            <p class="paragraph">Create innovative solutions for businesses, enabling them to achieve
+                                unprecedented growth.</p>
+                        </div>
+                    </div>
+                    <div class="d-flex gap-3 mt-4" data-aos="fade-up" data-aos-duration="1000">
+                        <div class="circle-icon">
+
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M2 18C2 16.4596 2 15.6893 2.34673 15.1235C2.54074 14.8069 2.80693 14.5407 3.12353 14.3467C3.68934 14 4.45956 14 6 14C7.54044 14 8.31066 14 8.87647 14.3467C9.19307 14.5407 9.45926 14.8069 9.65327 15.1235C10 15.6893 10 16.4596 10 18C10 19.5404 10 20.3107 9.65327 20.8765C9.45926 21.1931 9.19307 21.4593 8.87647 21.6533C8.31066 22 7.54044 22 6 22C4.45956 22 3.68934 22 3.12353 21.6533C2.80693 21.4593 2.54074 21.1931 2.34673 20.8765C2 20.3107 2 19.5404 2 18Z"
+                                    stroke="white" stroke-width="1.5" />
+                                <path
+                                    d="M14 18C14 16.4596 14 15.6893 14.3467 15.1235C14.5407 14.8069 14.8069 14.5407 15.1235 14.3467C15.6893 14 16.4596 14 18 14C19.5404 14 20.3107 14 20.8765 14.3467C21.1931 14.5407 21.4593 14.8069 21.6533 15.1235C22 15.6893 22 16.4596 22 18C22 19.5404 22 20.3107 21.6533 20.8765C21.4593 21.1931 21.1931 21.4593 20.8765 21.6533C20.3107 22 19.5404 22 18 22C16.4596 22 15.6893 22 15.1235 21.6533C14.8069 21.4593 14.5407 21.1931 14.3467 20.8765C14 20.3107 14 19.5404 14 18Z"
+                                    stroke="white" stroke-width="1.5" />
+                                <path
+                                    d="M2 6C2 4.45956 2 3.68934 2.34673 3.12353C2.54074 2.80693 2.80693 2.54074 3.12353 2.34673C3.68934 2 4.45956 2 6 2C7.54044 2 8.31066 2 8.87647 2.34673C9.19307 2.54074 9.45926 2.80693 9.65327 3.12353C10 3.68934 10 4.45956 10 6C10 7.54044 10 8.31066 9.65327 8.87647C9.45926 9.19307 9.19307 9.45926 8.87647 9.65327C8.31066 10 7.54044 10 6 10C4.45956 10 3.68934 10 3.12353 9.65327C2.80693 9.45926 2.54074 9.19307 2.34673 8.87647C2 8.31066 2 7.54044 2 6Z"
+                                    stroke="white" stroke-width="1.5" />
+                                <path
+                                    d="M14 6C14 4.45956 14 3.68934 14.3467 3.12353C14.5407 2.80693 14.8069 2.54074 15.1235 2.34673C15.6893 2 16.4596 2 18 2C19.5404 2 20.3107 2 20.8765 2.34673C21.1931 2.54074 21.4593 2.80693 21.6533 3.12353C22 3.68934 22 4.45956 22 6C22 7.54044 22 8.31066 21.6533 8.87647C21.4593 9.19307 21.1931 9.45926 20.8765 9.65327C20.3107 10 19.5404 10 18 10C16.4596 10 15.6893 10 15.1235 9.65327C14.8069 9.45926 14.5407 9.19307 14.3467 8.87647C14 8.31066 14 7.54044 14 6Z"
+                                    stroke="white" stroke-width="1.5" />
+                            </svg>
+
+                        </div>
+                        <div>
+                            <h3 class="h3">Our Values </h3>
+                            <p class="paragraph">The foundation of everything we do</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="padding-bottom padding-top bg-hero">
+        <div class="container-xl">
+            <div class="row">
+                <div class="col-lg-6">
+                    <h2 class="h2 text-white" data-aos="fade-up">Our Collaborative<br class="d-none d-lg-block">
+                        Experience</h2>
+                    <p class="paragraph text-white mt-5" data-aos="fade-up">
+                        At Social Kapita, we pride ourselves on collaborating with a diverse team of experts and
+                        strategic partners who bring a wealth of knowledge and experience across various industries and
+                        sectors. Our expert team includes professionals in
+                    </p>
+                    <p class="paragraph text-white" data-aos="fade-up">
+                        By working closely with these professionals, Social Kapita delivers innovative and tailored
+                        solutions that address the unique needs and challenges faced by our clients. Our collaborative
+                        approach ensures that we provide the highest level of service, driving sustainable growth and
+                        long-term success.
+                    </p>
+                    <div class="mt-5 box-gray p-4 mb-4" data-aos="fade-up">
+                        <div class="mb-4">
+                            <svg width="62" height="62" viewBox="0 0 62 62" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path d="M18.0833 43.9167V33.5833" stroke="url(#paint0_linear_30_3460)"
+                                    stroke-width="1.5" stroke-linecap="round" />
+                                <path d="M31 43.9167V18.0833" stroke="url(#paint1_linear_30_3460)" stroke-width="1.5"
+                                    stroke-linecap="round" />
+                                <path d="M43.9167 43.9167V28.4167" stroke="url(#paint2_linear_30_3460)"
+                                    stroke-width="1.5" stroke-linecap="round" />
+                                <path
+                                    d="M6.45831 31C6.45831 19.431 6.45831 13.6464 10.0523 10.0524C13.6464 6.45834 19.4309 6.45834 31 6.45834C42.5689 6.45834 48.3535 6.45834 51.9477 10.0524C55.5416 13.6464 55.5416 19.431 55.5416 31C55.5416 42.569 55.5416 48.3536 51.9477 51.9477C48.3535 55.5417 42.5689 55.5417 31 55.5417C19.4309 55.5417 13.6464 55.5417 10.0523 51.9477C6.45831 48.3536 6.45831 42.569 6.45831 31Z"
+                                    stroke="url(#paint3_linear_30_3460)" stroke-width="1.5" stroke-linejoin="round" />
+                                <defs>
+                                    <linearGradient id="paint0_linear_30_3460" x1="18.0833" y1="38.75" x2="19.0833"
+                                        y2="38.75" gradientUnits="userSpaceOnUse">
+                                        <stop offset="0.12" stop-color="#47B298" />
+                                        <stop offset="1" stop-color="#444B90" stop-opacity="0.92" />
+                                    </linearGradient>
+                                    <linearGradient id="paint1_linear_30_3460" x1="31" y1="31" x2="32" y2="31"
+                                        gradientUnits="userSpaceOnUse">
+                                        <stop offset="0.12" stop-color="#47B298" />
+                                        <stop offset="1" stop-color="#444B90" stop-opacity="0.92" />
+                                    </linearGradient>
+                                    <linearGradient id="paint2_linear_30_3460" x1="43.9167" y1="36.1667" x2="44.9167"
+                                        y2="36.1667" gradientUnits="userSpaceOnUse">
+                                        <stop offset="0.12" stop-color="#47B298" />
+                                        <stop offset="1" stop-color="#444B90" stop-opacity="0.92" />
+                                    </linearGradient>
+                                    <linearGradient id="paint3_linear_30_3460" x1="6.45831" y1="31" x2="55.5416" y2="31"
+                                        gradientUnits="userSpaceOnUse">
+                                        <stop offset="0.12" stop-color="#47B298" />
+                                        <stop offset="1" stop-color="#444B90" stop-opacity="0.92" />
+                                    </linearGradient>
+                                </defs>
+                            </svg>
+                        </div>
+                        <h3 class="fs-5 text-white">FMCG & Sales Growth</h3>
+                        <p class="paragraph text-white opacity-50">Leveraging deep industry insights to develop
+                            effective business strategies, drive sales growth and optimize distribution channels for
+                            maximum reach.</p>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="row">
+                        <div class="col-lg-6 mb-4" data-aos="fade-up" data-aos-duration="1000">
+                            <div class="box-gray-2 p-4">
+                                <div class="mb-4">
+                                    <svg width="62" height="62" viewBox="0 0 62 62" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M43.9167 51.6666C46.7701 51.6666 49.0833 49.3535 49.0833 46.5C49.0833 43.6465 46.7701 41.3333 43.9167 41.3333C41.0632 41.3333 38.75 43.6465 38.75 46.5C38.75 49.3535 41.0632 51.6666 43.9167 51.6666Z"
+                                            stroke="url(#paint0_linear_30_3465)" stroke-width="1.5" />
+                                        <path
+                                            d="M18.0833 51.6666C20.9368 51.6666 23.25 49.3535 23.25 46.5C23.25 43.6465 20.9368 41.3333 18.0833 41.3333C15.2299 41.3333 12.9167 43.6465 12.9167 46.5C12.9167 49.3535 15.2299 51.6666 18.0833 51.6666Z"
+                                            stroke="url(#paint1_linear_30_3465)" stroke-width="1.5" />
+                                        <path
+                                            d="M28.4167 43.9166H38.75M34.875 18.0833H37.3108C40.696 18.0833 42.3889 18.0833 43.8239 18.8958C45.259 19.7083 46.2158 21.2084 48.1296 24.2086C49.4713 26.3123 50.88 27.8393 52.8607 29.1978C54.8548 30.5655 55.8031 31.234 56.3293 32.3071C56.8333 33.3348 56.8333 34.5521 56.8333 36.9863C56.8333 40.1956 56.8333 41.8004 55.9317 42.82C55.893 42.8639 55.8535 42.9066 55.8127 42.9479C54.8635 43.9166 53.3701 43.9166 50.3827 43.9166H49.0833"
+                                            stroke="url(#paint2_linear_30_3465)" stroke-width="1.5"
+                                            stroke-linecap="round" stroke-linejoin="round" />
+                                        <path
+                                            d="M33.5833 18.0833L36.1517 24.5043C37.41 27.6504 38.0393 29.2234 39.3514 30.1116C40.6635 31 42.3576 31 45.7459 31H54.25"
+                                            stroke="url(#paint3_linear_30_3465)" stroke-width="1.5"
+                                            stroke-linecap="round" stroke-linejoin="round" />
+                                        <path
+                                            d="M12.5797 43.9166C9.08517 43.9166 7.33791 43.9166 6.25229 42.7818C5.16667 41.6467 5.16667 39.82 5.16667 36.1666V18.0833C5.16667 14.4299 5.16667 12.6032 6.25229 11.4683C7.33791 10.3333 9.08517 10.3333 12.5797 10.3333H26.1702C29.6649 10.3333 31.412 10.3333 32.4978 11.4683C33.5833 12.6032 33.5833 14.4299 33.5833 18.0833V43.9166H22.4638"
+                                            stroke="url(#paint4_linear_30_3465)" stroke-width="1.5"
+                                            stroke-linecap="round" stroke-linejoin="round" />
+                                        <defs>
+                                            <linearGradient id="paint0_linear_30_3465" x1="38.75" y1="46.5" x2="49.0833"
+                                                y2="46.5" gradientUnits="userSpaceOnUse">
+                                                <stop offset="0.12" stop-color="#47B298" />
+                                                <stop offset="1" stop-color="#444B90" stop-opacity="0.92" />
+                                            </linearGradient>
+                                            <linearGradient id="paint1_linear_30_3465" x1="12.9167" y1="46.5" x2="23.25"
+                                                y2="46.5" gradientUnits="userSpaceOnUse">
+                                                <stop offset="0.12" stop-color="#47B298" />
+                                                <stop offset="1" stop-color="#444B90" stop-opacity="0.92" />
+                                            </linearGradient>
+                                            <linearGradient id="paint2_linear_30_3465" x1="28.4167" y1="31" x2="56.8333"
+                                                y2="31" gradientUnits="userSpaceOnUse">
+                                                <stop offset="0.12" stop-color="#47B298" />
+                                                <stop offset="1" stop-color="#444B90" stop-opacity="0.92" />
+                                            </linearGradient>
+                                            <linearGradient id="paint3_linear_30_3465" x1="33.5833" y1="24.5416"
+                                                x2="54.25" y2="24.5416" gradientUnits="userSpaceOnUse">
+                                                <stop offset="0.12" stop-color="#47B298" />
+                                                <stop offset="1" stop-color="#444B90" stop-opacity="0.92" />
+                                            </linearGradient>
+                                            <linearGradient id="paint4_linear_30_3465" x1="5.16667" y1="27.125"
+                                                x2="33.5833" y2="27.125" gradientUnits="userSpaceOnUse">
+                                                <stop offset="0.12" stop-color="#47B298" />
+                                                <stop offset="1" stop-color="#444B90" stop-opacity="0.92" />
+                                            </linearGradient>
+                                        </defs>
+                                    </svg>
+
+                                </div>
+                                <h3 class="fs-5 text-white">Logistics & Supply Chain Management</h3>
+                                <p class="paragraph text-white opacity-50">Providing expertise in logistics and supply
+                                    chain optimization to ensure efficient operations and seamless market expansion.</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 mb-4" data-aos="fade-up" data-aos-duration="1000">
+                            <div class="box-gray-2 p-4">
+                                <div class="mb-4">
+                                    <svg width="62" height="62" viewBox="0 0 62 62" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M43.9167 35.6616C43.9167 34.7685 43.9167 34.3221 44.051 33.9243C44.4416 32.768 45.4713 32.3196 46.5028 31.8496C47.6625 31.3214 48.2422 31.0573 48.8167 31.0108C49.469 30.9581 50.1223 31.0987 50.6798 31.4115C51.4189 31.8261 51.9343 32.6143 52.4621 33.2552C54.8989 36.2152 56.1175 37.6955 56.5634 39.3276C56.9232 40.6446 56.9232 42.022 56.5634 43.339C55.9131 45.7196 53.8586 47.7152 52.3378 49.5623C51.56 50.507 51.1709 50.9795 50.6798 51.2551C50.1223 51.568 49.469 51.7085 48.8167 51.6558C48.2422 51.6093 47.6625 51.3453 46.5028 50.817C45.4713 50.3471 44.4416 49.8986 44.051 48.7423C43.9167 48.3445 43.9167 47.8981 43.9167 47.005V35.6616Z"
+                                            stroke="url(#paint0_linear_30_3471)" stroke-width="1.5" />
+                                        <path d="M24.5417 54.25C28.1085 57.6944 33.8915 57.6944 37.4583 54.25"
+                                            stroke="url(#paint1_linear_30_3471)" stroke-width="1.5"
+                                            stroke-linecap="round" stroke-linejoin="round" />
+                                        <path
+                                            d="M18.0833 35.6616C18.0833 34.5373 18.0518 33.527 17.1428 32.7365C16.8121 32.449 16.3738 32.2493 15.4972 31.8499C14.3375 31.3219 13.7577 31.0579 13.1832 31.0114C11.4594 30.8719 10.532 32.0483 9.53799 33.2555C7.10093 36.2155 5.88239 37.6955 5.43651 39.3276C5.0767 40.6446 5.0767 42.022 5.43651 43.339C6.08684 45.7196 8.14142 47.7147 9.6622 49.5617C10.6208 50.7261 11.5366 51.7886 13.1832 51.6553C13.7577 51.6088 14.3375 51.3448 15.4972 50.8165C16.3738 50.4174 16.8121 50.2177 17.1428 49.9301C18.0518 49.1396 18.0833 48.1293 18.0833 47.0048V35.6616Z"
+                                            stroke="url(#paint2_linear_30_3471)" stroke-width="1.5" />
+                                        <path
+                                            d="M5.16666 41.3334V31C5.16666 16.7327 16.7326 5.16669 31 5.16669C45.2672 5.16669 56.8333 16.7327 56.8333 31L56.8336 41.3334"
+                                            stroke="url(#paint3_linear_30_3471)" stroke-width="1.5"
+                                            stroke-linecap="round" stroke-linejoin="round" />
+                                        <defs>
+                                            <linearGradient id="paint0_linear_30_3471" x1="43.9167" y1="41.3333"
+                                                x2="56.8333" y2="41.3333" gradientUnits="userSpaceOnUse">
+                                                <stop offset="0.12" stop-color="#47B298" />
+                                                <stop offset="1" stop-color="#444B90" stop-opacity="0.92" />
+                                            </linearGradient>
+                                            <linearGradient id="paint1_linear_30_3471" x1="24.5417" y1="55.5416"
+                                                x2="37.4583" y2="55.5416" gradientUnits="userSpaceOnUse">
+                                                <stop offset="0.12" stop-color="#47B298" />
+                                                <stop offset="1" stop-color="#444B90" stop-opacity="0.92" />
+                                            </linearGradient>
+                                            <linearGradient id="paint2_linear_30_3471" x1="5.16666" y1="41.3333"
+                                                x2="18.0833" y2="41.3333" gradientUnits="userSpaceOnUse">
+                                                <stop offset="0.12" stop-color="#47B298" />
+                                                <stop offset="1" stop-color="#444B90" stop-opacity="0.92" />
+                                            </linearGradient>
+                                            <linearGradient id="paint3_linear_30_3471" x1="5.16666" y1="23.25"
+                                                x2="56.8336" y2="23.25" gradientUnits="userSpaceOnUse">
+                                                <stop offset="0.12" stop-color="#47B298" />
+                                                <stop offset="1" stop-color="#444B90" stop-opacity="0.92" />
+                                            </linearGradient>
+                                        </defs>
+                                    </svg>
+
+                                </div>
+                                <h3 class="fs-5 text-white">Training and Development</h3>
+                                <p class="paragraph text-white opacity-50">Offering internationally certified training
+                                    in mental health, soft skills & leadership, empowering individuals and teams to
+                                    achieve their full potential.</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 mb-4" data-aos="fade-up" data-aos-duration="1000">
+                            <div class="box-gray-2 p-4">
+                                <div class="mb-4">
+                                    <svg width="62" height="62" viewBox="0 0 62 62" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M42.625 45.2083L46.5 40.6875H41.6968C38.9897 40.6875 37.6361 40.6875 36.494 40.1142C35.3516 39.5413 34.6006 38.4855 33.099 36.3736L25.4565 25.6263C23.9549 23.5146 23.204 22.4588 22.0617 21.8856C20.9194 21.3125 19.5658 21.3125 16.8587 21.3125H15.5M42.625 16.7917L46.5 21.3125H41.6968C38.9897 21.3125 37.6361 21.3125 36.494 21.8856C35.3516 22.4588 34.6006 23.5146 33.099 25.6263M15.5 40.6875H16.8587C19.5658 40.6875 20.9194 40.6875 22.0617 40.1142C23.204 39.5413 23.9549 38.4855 25.4565 36.3736"
+                                            stroke="url(#paint0_linear_30_3476)" stroke-width="1.5"
+                                            stroke-linecap="round" stroke-linejoin="round" />
+                                        <path
+                                            d="M6.45833 31C6.45833 19.431 6.45833 13.6464 10.0524 10.0524C13.6464 6.45834 19.431 6.45834 31 6.45834C42.5689 6.45834 48.3535 6.45834 51.9477 10.0524C55.5417 13.6464 55.5417 19.431 55.5417 31C55.5417 42.569 55.5417 48.3536 51.9477 51.9477C48.3535 55.5417 42.5689 55.5417 31 55.5417C19.431 55.5417 13.6464 55.5417 10.0524 51.9477C6.45833 48.3536 6.45833 42.569 6.45833 31Z"
+                                            stroke="url(#paint1_linear_30_3476)" stroke-width="1.5" />
+                                        <defs>
+                                            <linearGradient id="paint0_linear_30_3476" x1="15.5" y1="31" x2="46.5"
+                                                y2="31" gradientUnits="userSpaceOnUse">
+                                                <stop offset="0.12" stop-color="#47B298" />
+                                                <stop offset="1" stop-color="#444B90" stop-opacity="0.92" />
+                                            </linearGradient>
+                                            <linearGradient id="paint1_linear_30_3476" x1="6.45833" y1="31" x2="55.5417"
+                                                y2="31" gradientUnits="userSpaceOnUse">
+                                                <stop offset="0.12" stop-color="#47B298" />
+                                                <stop offset="1" stop-color="#444B90" stop-opacity="0.92" />
+                                            </linearGradient>
+                                        </defs>
+                                    </svg>
+
+                                </div>
+                                <h3 class="fs-5 text-white">Retail and Distribution</h3>
+                                <p class="paragraph text-white opacity-50">Specializing in business development, product
+                                    management and retail strategies to enhance market presence and drive distribution
+                                    success.</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 mb-4" data-aos="fade-up" data-aos-duration="1000">
+                            <div class="box-gray-2 p-4">
+                                <div class="mb-4">
+                                    <svg width="62" height="62" viewBox="0 0 62 62" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M46.5 25.8333C46.5 25.8333 31 36.1667 31 54.25"
+                                            stroke="url(#paint0_linear_30_3479)" stroke-width="1.5"
+                                            stroke-linecap="round" stroke-linejoin="round" />
+                                        <path
+                                            d="M24.1511 28.8881C19.9894 32.0052 14.0617 31.6717 10.2778 27.8879C4.01666 21.6267 5.26888 7.85222 5.26888 7.85222C5.26888 7.85222 19.0434 6.6 25.3045 12.8611C27.7832 15.3399 28.7814 18.7387 28.2986 21.9583"
+                                            stroke="url(#paint1_linear_30_3479)" stroke-width="1.5"
+                                            stroke-linecap="round" stroke-linejoin="round" />
+                                        <path
+                                            d="M38.6565 33.1119C35.247 29.4066 35.3392 23.6371 38.9329 20.0432C44.4984 14.4778 56.7424 15.5909 56.7424 15.5909C56.7424 15.5909 57.8556 27.8349 52.29 33.4004C50.3432 35.3472 47.7581 36.2664 45.2083 36.1581"
+                                            stroke="url(#paint2_linear_30_3479)" stroke-width="1.5"
+                                            stroke-linecap="round" stroke-linejoin="round" />
+                                        <path d="M15.5 18.0833C15.5 18.0833 31 31 31 54.25"
+                                            stroke="url(#paint3_linear_30_3479)" stroke-width="1.5"
+                                            stroke-linecap="round" stroke-linejoin="round" />
+                                        <defs>
+                                            <linearGradient id="paint0_linear_30_3479" x1="31" y1="40.0417" x2="46.5"
+                                                y2="40.0417" gradientUnits="userSpaceOnUse">
+                                                <stop offset="0.12" stop-color="#47B298" />
+                                                <stop offset="1" stop-color="#444B90" stop-opacity="0.92" />
+                                            </linearGradient>
+                                            <linearGradient id="paint1_linear_30_3479" x1="5.16666" y1="19.375"
+                                                x2="28.4167" y2="19.375" gradientUnits="userSpaceOnUse">
+                                                <stop offset="0.12" stop-color="#47B298" />
+                                                <stop offset="1" stop-color="#444B90" stop-opacity="0.92" />
+                                            </linearGradient>
+                                            <linearGradient id="paint2_linear_30_3479" x1="36.1667" y1="25.8334"
+                                                x2="56.8333" y2="25.8334" gradientUnits="userSpaceOnUse">
+                                                <stop offset="0.12" stop-color="#47B298" />
+                                                <stop offset="1" stop-color="#444B90" stop-opacity="0.92" />
+                                            </linearGradient>
+                                            <linearGradient id="paint3_linear_30_3479" x1="15.5" y1="36.1667" x2="31"
+                                                y2="36.1667" gradientUnits="userSpaceOnUse">
+                                                <stop offset="0.12" stop-color="#47B298" />
+                                                <stop offset="1" stop-color="#444B90" stop-opacity="0.92" />
+                                            </linearGradient>
+                                        </defs>
+                                    </svg>
+
+                                </div>
+                                <h3 class="fs-5 text-white">Sustainability and Environmental Impact</h3>
+                                <p class="paragraph text-white opacity-50">Focusing on air pollution and climate change,
+                                    with an emphasis on greenhouse gas emission auditing and reduction, to help
+                                    businesses achieve their sustainability goals.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Script -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- scroll animation -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+
+</html>

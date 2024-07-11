@@ -1,0 +1,77 @@
+// Main font
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
+
+
+body {
+    font-family: "Plus Jakarta Sans", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+span,
+a,
+p {
+    line-height: 1.5em !important;
+}
+
+.h1 {
+    font-size: 34px;
+    font-weight: 600;
+    color: var(--white);
+}
+
+.h2 {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+}
+
+.h3 {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 25px;
+}
+
+@media (min-width: 992px) {
+    .h1 {
+        font-size: 46px;
+        font-weight: 600;
+    }
+}
+
+.h5 {
+    font-size: 16px;
+    font-weight: 400;
+
+    br {
+        display: none;
+    }
+}
+
+@media (min-width: 992px) {
+    .h5 {
+        font-size: 18px;
+        font-weight: 400;
+
+        br {
+            display: inline-block;
+        }
+    }
+}
+
+.font-weight-600 {
+    font-weight: 600;
+}
+
+.paragraph {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 25px;
+    color: #72777D;
+}

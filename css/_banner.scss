@@ -1,0 +1,75 @@
+.main-banner {
+    background-color: var(--black);
+    width: 100%;
+    height: auto;
+    background-image: url(../img/main_banner.webp);
+    background-size: cover;
+    padding: 100px 0px;
+    background-position: bottom center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-repeat: no-repeat;
+
+    @media (min-width: 992px) {
+        height: 927px;
+        justify-content: start;
+        text-align: left;
+    }
+
+    .strip-head {
+        /* Auto layout */
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding: 8px 40px;
+        gap: 10px;
+        height: 44px;
+        background: rgba(255, 255, 255, 0.15);
+        border: 1px solid #606372;
+        border-radius: 60px;
+        color: var(--white);
+        width: fit-content;
+        font-size: 12px;
+        @media (min-width: 992px) {
+            font-size: 14px;
+        }
+    }
+
+    h1 {
+        font-weight: 600;
+        font-size: 40px;
+        letter-spacing: -2.5px;
+        color: var(--white);
+        @media (min-width: 992px) {
+            font-size: 60px;
+        }
+    }
+
+    p {
+        font-style: normal;
+        font-weight: 500;
+        font-size: 15px;
+        line-height: 25px;
+        color: var(--white);
+    }
+}
+
+.stripe-banner {
+    padding: 16px 24px;
+    height: 60px;
+    background: linear-gradient(90deg, #47B298 12%, rgba(68, 75, 144, 0.92) 100%);
+    color: var(--white);
+
+    @media (min-width: 992px) {
+        height: 99px;
+        padding: 20px 24px;
+    }
+
+}
+
+.scroll-h {
+    overflow: auto;
+    white-space: nowrap;
+}
