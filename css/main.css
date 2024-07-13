@@ -154,7 +154,7 @@ li {
 .desk-header {
   position: absolute;
   top: 0px;
-  padding: 24px 100px;
+  padding: 24px;
   background: rgba(31, 35, 52, 0.6);
 }
 .desk-header .barnd img {
@@ -219,9 +219,6 @@ footer ul li a {
   }
   .padding-bottom {
     padding-bottom: 120px;
-  }
-  .container-xl {
-    padding: 0px;
   }
 }
 .container-xxl {
@@ -617,10 +614,16 @@ p {
 
 .bg-main-hero {
   background-image: url(../img/section.webp);
-  background-attachment: fixed;
-  background-position: center;
-  background-size: cover;
   text-align: center;
+  background-color: #2a2c40;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+@media (min-width: 992px) {
+  .bg-main-hero {
+    background-attachment: fixed;
+    background-position: center;
+  }
 }
 .bg-main-hero h5 {
   font-style: normal;
@@ -650,4 +653,14 @@ p {
 .bg-contact {
   width: 100%;
   background-image: url(../img/bg-contact.webp);
+}
+
+.box-value {
+  width: 100%;
+  height: auto;
+  padding: 8px 16px;
+  border: 1px solid var(--primary);
+  border-radius: 35px;
+  text-align: center;
+  color: var(--primary);
 }/*# sourceMappingURL=main.css.map */
